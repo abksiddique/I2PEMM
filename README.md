@@ -1,7 +1,7 @@
 # The Emerging Network Topology of the Invisible Internet Project: Mathematical Modeling and Empirical Validation
 
 <p align="center">
-  <img src="docs/Framework_SWARMI2P-4.jpg" alt="SWARM-I2P Framework Overview" width="100%">
+  <img src="docs/Framework-CloudSWARM.drawio.pdf" alt="SWARM-I2P Framework Overview" width="100%">
 </p>
 
 Large-scale deployment framework, data-collection scripts, and links to the publicly released dataset that maps the **network layer** of the Invisible Internet Project (I2P).
