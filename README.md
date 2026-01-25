@@ -1,4 +1,4 @@
-# Mapping the Invisible Internet (SWARM-I2P)
+# The Emerging Network Topology of the Invisible Internet Project: Mathematical Modeling and Empirical Validation
 
 <p align="center">
   <img src="docs/Framework_SWARMI2P-4.jpg" alt="SWARM-I2P Framework Overview" width="100%">
