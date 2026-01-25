@@ -2,7 +2,7 @@
 ### Mathematical Modeling and Empirical Validation
 
 <p align="center">
-  <img src="data/figures/i2p_topology_framework.png" alt="I2P Network Topology Framework" width="100%">
+  <img src="data/Framework-CloudSWARM.png" alt="I2P Network Topology Framework" width="100%">
 </p>
 
 This repository accompanies the research paper:
