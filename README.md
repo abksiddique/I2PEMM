@@ -1,5 +1,4 @@
-# The Emerging Network Topology of the Invisible Internet Project  
-### Mathematical Modeling and Empirical Validation
+# The Emerging Network Topology of the Invisible Internet Project: Mathematical Modeling and Empirical Validation
 
 <p align="center">
   <img src="data/Framework-CloudSWARM.png" alt="I2P Network Topology Framework" width="100%">
