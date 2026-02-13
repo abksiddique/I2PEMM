@@ -10,12 +10,12 @@
 
 ## Overview
 
-Automated deployment scripts for setting up I2P (Invisible Internet Project) research infrastructure on Ubuntu 24.04 VPS instances. These scripts deploy a complete I2P garlic routing node with GUI access, firewall protection, and floodfill capability for network topology research.
+Automated deployment scripts for setting up I2P (Invisible Internet Project) research infrastructure on Ubuntu 24.04 VPS instances. These scripts deploy a complete I2P garlic routing node with GUI access, firewall protection, and floodfill/standard router capability for network topology research paper titled (The Emerging Network Topology of the Invisible Internet Project: Mathematical Modeling and Empirical Validation).
 
 ## System Requirements
 
 - **OS:** Ubuntu 24.04 LTS (clean installation)
-- **RAM:** 4GB minimum
+- **RAM:** 2GB/4GB minimum
 - **Storage:** 60GB minimum
 - **Network:** 1Gbps recommended
 - **Access:** Root SSH access
@@ -278,4 +278,3 @@ These scripts are provided for academic and research purposes.
 
 **Version:** 1.0  
 **Last Updated:** November 2025  
-**Tested On:** Ubuntu 24.04 LTS, ColoCrossing VPS (4GB RAM, 60GB SSD, 1Gbps)
