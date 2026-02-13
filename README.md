@@ -23,7 +23,7 @@ It is intended to:
 - Provide a structured home for **analysis scripts, figures, and methodology notes**
 - Enable **future extensions** as the paper evolves or is validated further
 
-> ⚠️ The paper and this repository are **actively evolving**. Some components are intentionally minimal or conceptual at this stage.
+> The paper and this repository are **actively evolving**. Some components are intentionally minimal or conceptual at this stage.
 
 ---
 
@@ -103,10 +103,10 @@ The goal is **scientific understanding**, not surveillance.
 
 ## Current Status
 
-- ✅ Core mathematical framework defined  
-- ✅ Initial empirical observations completed  
-- 🚧 Extended validation and refinement in progress  
-- 🚧 Figures and analysis notebooks under active development  
+- Core mathematical framework defined  
+- Initial empirical observations completed  
+- Extended validation and refinement in progress  
+- Figures and analysis notebooks under active development  
 
 This repository will be updated as the manuscript matures.
 
@@ -122,6 +122,7 @@ You may use this repository to:
 - Extend the models for comparative or follow-up research
 
 If you build upon this work, proper citation is expected.
+
 
 ---
 
