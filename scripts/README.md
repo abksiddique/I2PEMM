@@ -3,7 +3,7 @@
 **Design by:** Siddique Abubakar Muntaka  
 **University of Cincinnati** - PhD Information Technology  
 **Advisor:** Dr. Jacques Bou Abdo  
-**Lab:** Center of Anonymity Networks  
+**Lab:** Multi-domain and Information Operations, Resilience and Anonymity Groupe (MIRAGe-UC)  
 **School of Information Technology**
 
 ---
@@ -255,7 +255,7 @@ If you use these scripts in your research, please cite:
 
 ```
 Muntaka, S. A. (2025). I2P Research Infrastructure Deployment Scripts.
-Center of Anonymity Networks, School of Information Technology,
+Multi-domain and Information Operations, Resilience and Anonymity Groupe (MIRAGe-UC), School of Information Technology,
 University of Cincinnati. Advisor: Dr. Jacques Bou Abdo.
 ```
 
@@ -271,7 +271,7 @@ These scripts are provided for academic and research purposes.
 
 **Primary Contact:** Siddique Abubakar Muntaka  
 **Institution:** University of Cincinnati  
-**Lab:** Center of Anonymity Networks  
+**Lab:** Multi-domain and Information Operations, Resilience and Anonymity Groupe (MIRAGe-UC)  
 **Advisor:** Dr. Jacques Bou Abdo
 
 ---
