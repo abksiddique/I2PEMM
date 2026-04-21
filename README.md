@@ -1,4 +1,4 @@
-# The Emerging Network Topology of the Invisible Internet Project: Mathematical Modeling and Empirical Validation
+# Bridging the Epistemic Gap in the Invisible Internet: Extended Mathematical Modeling and Empirical Characterization of I2P Topology
 
 <p align="center">
   <img src="data/Framework-CloudSWARM.png" alt="I2P Network Topology Framework" width="100%">
@@ -6,9 +6,9 @@
 
 This repository accompanies the research paper:
 
-> **The Emerging Network Topology of the Invisible Internet Project: Mathematical Modeling and Empirical Validation**
+> **Bridging the Epistemic Gap in the Invisible Internet: Extended Mathematical Modeling and Empirical Characterization of I2P Topology**
 
-The work investigates how the **Invisible Internet Project (I2P)** forms, evolves, and stabilizes at the **network layer**, combining **mathematical modeling** with **empirical observations** derived from live I2P router behavior.
+The work investigates how the **Invisible Internet Project (I2P)** forms, evolves, and stabilizes at the **network layer**, combining **mathematical modeling** with **empirical observations** derived from live I2P router behavior. Specifically, it derives an Extended Mathematical Model (EMM) grounded in production source code and validated against a six-router, geographically distributed testbed operated over thirty days.
 
 ---
 
@@ -20,10 +20,8 @@ It is intended to:
 
 - Document the **models, assumptions, and system design choices** used in the study  
 - Support **reproducibility and transparency** of the empirical analysis  
-- Provide a structured home for **analysis scripts, figures, and methodology notes**
+- Provide a structured home for **analysis notebooks, validation data, and deployment scripts**
 - Enable **future extensions** as the paper evolves or is validated further
-
-> The paper and this repository are **actively evolving**. Some components are intentionally minimal or conceptual at this stage.
 
 ---
 
@@ -31,7 +29,7 @@ It is intended to:
 
 The study addresses the following core questions:
 
-- How does I2P’s peer selection and tunnel construction shape its **global network topology**?
+- How does I2P's peer selection and tunnel construction shape its **global network topology**?
 - Can the observed topology be explained using **graph-theoretic and probabilistic models**?
 - How closely do **empirical observations** align with the proposed mathematical abstractions?
 - What structural properties (e.g., clustering, degree imbalance, persistence) emerge over time?
@@ -55,23 +53,19 @@ Empirical data is used to **validate**, **stress-test**, and **refine** these ab
 
 ## Repository Structure
 
-The repository is organized to separate **conceptual material**, **analysis artifacts**, and **supporting code**.
-
-
-> Folder names and contents may expand as the paper progresses.
-
 ---
 
 ## Mathematical Modeling Component
 
-The modeling component explores:
+The modeling component derives an Extended Mathematical Model (EMM) that:
 
-- Degree distribution under constrained peer selection
-- Probabilistic tunnel attachment mechanisms
-- Temporal graph behavior under short-lived edges
-- Emergent properties such as **hub formation**, **selection bias**, and **structural persistence**
+- Formally recalibrates four documentation-based assumptions from prior work against operational testbed data
+- Derives degree distributions under constrained peer selection and partial network visibility (~24.8%)
+- Establishes probabilistic tunnel attachment mechanisms for both client and exploratory tunnels
+- Quantifies the emergent degree asymmetry between Fast-tier hubs (degree ≈ 1053) and Standard peers (degree = 8)
+- Formally bounds the adversarial resource thresholds required to compromise I2P's privacy guarantees
 
-All assumptions used in the models are **explicitly stated** and tested against observed behavior where possible.
+All assumptions are **explicitly stated** and statistically validated against observed behavior using Chi-square goodness-of-fit tests and the Kolmogorov-Smirnov test.
 
 ---
 
@@ -79,12 +73,29 @@ All assumptions used in the models are **explicitly stated** and tested against 
 
 Empirical validation is performed through:
 
-- Observation of live I2P routers under controlled configurations
-- Extraction of tunnel participation patterns
-- Longitudinal analysis of peer appearance and disappearance
-- Comparison between **expected** and **observed** structural properties
+- Deployment of six geographically distributed I2P routers (three floodfill, three standard) on VPS infrastructure over thirty days
+- Synchronized extraction of router profile states (via `/profiles` endpoint) and active tunnel peer assignments (via `/tunnels` endpoint)
+- Longitudinal analysis of peer tier classifications across Fast, High Capacity, and Standard tiers
+- Direct statistical comparison between EMM-predicted selection probabilities and observed tunnel construction frequencies
 
 No payload content or application-layer data is collected.
+
+---
+
+## Key Empirical Findings
+
+| Finding | Result |
+|---|---|
+| Router network visibility | ~24.8% of active routing nodes (~12,394 of 50,000) |
+| Speed variance for identical peers across routers | Up to 141.12 KBps |
+| Client tunnel Fast-tier selection rate | 97.3% |
+| High Capacity overrepresentation in exploratory tunnels | 7.4× |
+| Corollary 5 Chi-square p-value | 0.976 |
+| Corollary 6 Chi-square p-value | 1.0 |
+| Corollary 7 KS statistic | 0 |
+| Fast-tier predicted degree | ≈ 1053 |
+| Standard-tier predicted degree | 8 |
+| Degree asymmetry | 131.6× |
 
 ---
 
@@ -101,38 +112,30 @@ The goal is **scientific understanding**, not surveillance.
 
 ---
 
-## Current Status
-
-- Core mathematical framework defined  
-- Initial empirical observations completed  
-- Extended validation and refinement in progress  
-- Figures and analysis notebooks under active development  
-
-This repository will be updated as the manuscript matures.
-
----
-
 ## How to Use This Repository
 
 You may use this repository to:
 
 - Understand the **methodological structure** of the study
 - Follow the **modeling and validation logic**
-- Reproduce selected figures (when scripts are provided)
+- Reproduce the statistical validation results using the notebooks and data files
 - Extend the models for comparative or follow-up research
 
 If you build upon this work, proper citation is expected.
 
+---
+
+## Citation
+
+If this repository or the associated paper contributes to your research, please cite:
+
+> Siddique A. Muntaka, Jacques Bou Abdo, and Liaquat Hossain. "Bridging the Epistemic Gap in the Invisible Internet: Extended Mathematical Modeling and Empirical Characterization of I2P Topology." Under review, Network and Distributed System Security (NDSS) Symposium 2026.
 
 ---
 
-## Citation (Preliminary)
+## Related Work
 
-Citation details will be finalized upon publication.
-
-For now, please cite the working paper as:
-
-> Siddique A. Muntaka. *The Emerging Network Topology of the Invisible Internet Project: Mathematical Modeling and Empirical Validation*. Manuscript in preparation.
+- **SWARM-I2P Dataset** — Muntaka et al. (2025). *Mapping the Invisible Internet: Framework and Dataset*. Data in Brief, Elsevier. [https://github.com/abksiddique/swarmi2p/](https://github.com/abksiddique/swarmi2p/)
 
 ---
 
@@ -154,4 +157,3 @@ Unless otherwise stated:
 ## Contact
 
 For academic correspondence, collaboration, or clarification related to this research, please contact the author through appropriate scholarly channels.
-
