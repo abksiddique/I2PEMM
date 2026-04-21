@@ -53,6 +53,42 @@ Empirical data is used to **validate**, **stress-test**, and **refine** these ab
 
 ## Repository Structure
 
+    I2PEMM/
+    ├── data/
+    │   ├── EMM - Final Sheet.xlsx          — Validation data: contains tabs for
+    │   │                                     corollary 5 (Chi-square, p=0.976),
+    │   │                                     corollary 6 (Chi-square, p=1.0),
+    │   │                                     and corollary 7 (KS statistic=0)
+    │   ├── Framework-CloudSWARM.png        — Testbed deployment architecture figure
+    │   └── Framework-CloudSWARM.drawio.pdf — Editable source of deployment diagram
+    │
+    ├── notebooks/
+    │   ├── 1_Routers_have_FullView.ipynb
+    │   ├── 2_Routesr_have_similar_View.ipynb
+    │   ├── 3_ClientTunnelSelectFAstset.ipynb
+    │   ├── 4_ExploratoryTunnelSelectstandard&Highcapa.ipynb
+    │   └── 5_RouterProfileView_All.ipynb
+    │
+    ├── scripts/
+    │   ├── 01_system_user_setup.sh
+    │   ├── 02_desktop_rdp_setup.sh
+    │   ├── 03_firewall_setup.sh
+    │   ├── 04_java_i2p_install.sh
+    │   ├── 05_i2p_configuration.sh
+    │   ├── 05b_i2p_wizard_autocomplete.sh
+    │   ├── 06_i2p_research_configX.sh
+    │   ├── 06_i2p_research_config_v2.sh
+    │   ├── 07_network_status_fix.sh
+    │   ├── 08_port_verification.sh
+    │   ├── 09_i2p_standard_router.sh
+    │   ├── 10_maximum_immersion.sh
+    │   ├── 11_nuclear_immersion.sh
+    │   ├── 6_VPS1_ORIGINAL_FIXED.sh
+    │   ├── AWS_EC2_Fix_Script.sh
+    │   └── AWS_FIX_SCRIPT_GUIDE.md
+    │
+    └── README.md
+
 ---
 
 ## Mathematical Modeling Component
